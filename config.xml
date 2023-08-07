@@ -68,18 +68,6 @@
     <preference name="Scheme" value="https" />
     <preference name="ScrollEnabled" value="true" />
 
-    <plugin name="cordova-plugin-geolocation" />
-    
-    <plugin name="cordova-plugin-camera" spec="~2.4.1"  /> <!--spec="~2.4.1"  -->
-    <feature name="Camera">
-       <param name="android-package" value="org.apache.cordova.CameraLauncher" />
-    </feature>  
-    
-    
-    <plugin name="cordova-plugin-qrscanner" /> 
-    <plugin name="cordova-plugin-camera-preview" spec="https://github.com/diogenesjup/diogenes-camera-preview.git" />
-
-
         
     <platform name="android">
         <!--
