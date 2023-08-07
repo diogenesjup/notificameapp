@@ -1,0 +1,7 @@
+{
+  "name": "com.diogenesjunior.notificame",
+  "type": "custom",
+  "integrations": {
+    "cordova": {}
+  }
+}
