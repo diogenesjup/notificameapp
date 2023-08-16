@@ -3,10 +3,13 @@ function enviarCampanhaNotificacoes() {
     // Evitar que o formulário seja realmente submetido
     event.preventDefault();
 
+    alert("Notificações agendadas!");
+
     // Recuperar os valores inseridos pelo usuário
     var nomeCampanha = document.getElementById("nome_campanha").value;
     var numNotificacoes = parseInt(document.getElementById("num_notificacoes").value);
     var intervalo = parseInt(document.getElementById("num_intervalo").value) * 1000; // Convertendo para milissegundos
+    var appIcon = document.getElementById("app_icon").value;
 
     var titulo = "Uma notificação de exemplo";
     var mensagem = "Estamos apenas mostrando como é o app de notificação de exemplo";
@@ -14,27 +17,50 @@ function enviarCampanhaNotificacoes() {
     for (var i = 0; i < numNotificacoes; i++) {
         // Usando setTimeout para agendar notificações com base no intervalo fornecido
         setTimeout(function () {
-            notificacao(titulo, mensagem);
+            notificacao(titulo, mensagem,appIcon);
         }, intervalo * i);
     }
 }
 
+function generateUniqueId() {
+  return Math.random().toString(36).substr(2, 9);
+}
+
 // ENVIAR NOTIFICAÇÃO 
-function notificacao(titulo,mensagem){
+function notificacao(titulo,mensagem,appIcon){
 
   console.log("Sim...");
           
   // NOTIFICAÇÃO DE TREINO
   document.addEventListener("deviceready", function () {
 
-  var ID_NOTIFICATION_1 = 1;
-  
+      var ID_NOTIFICATION_1 = generateUniqueId();
+
+      var icon = "";
+
+      if(appIcon=="uber"){
+         icon = "https://cdn.icon-icons.com/icons2/2108/PNG/512/uber_icon_130805.png";
+      }
+
+      if(appIcon=="hotmart"){
+          icon = "https://static.semrush.com/blog/uploads/user/c1/12/c1123fdd8714f1b5c690ed52fa8412e7.png";
+      }
+
+      if(appIcon=="nubank"){
+          icon = "https://logospng.org/download/nubank/logo-nubank-roxo-icon-4096.png";
+      }
+
+      if(appIcon==""){
+          icon = "https://fabricadeplugins.com.br/wp-content/uploads/2023/07/simbolo.png";
+      }
+
       cordova.plugins.notification.local.schedule({
           id: ID_NOTIFICATION_1,
           title: titulo,
           text: mensagem,
           led: "#D40F7D",
-          badge: 1
+          badge: 1,
+          icon: icon,
       });
 
   //$(document).on("click", "#showNotification1", function() {    
