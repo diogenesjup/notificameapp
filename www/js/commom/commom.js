@@ -23,8 +23,9 @@ function enviarCampanhaNotificacoes() {
 }
 
 function generateUniqueId() {
-  return Math.random().toString(36).substr(2, 9);
+  return Math.floor(Math.random() * 100000); // Retorna um número entre 0 e 999999999
 }
+
 
 // ENVIAR NOTIFICAÇÃO 
 function notificacao(titulo,mensagem,appIcon){
