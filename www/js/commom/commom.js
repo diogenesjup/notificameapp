@@ -1,24 +1,22 @@
-function enviarCampanhaNotificacoes(){
+// Função para enviar notificações com base nas entradas do formulário
+function enviarCampanhaNotificacoes() {
+    // Evitar que o formulário seja realmente submetido
+    event.preventDefault();
 
-  console.log("Disparando...");
-  
-  var num_notificacoes = jQuery("#num_notificacoes").val();
-  var num_intervalo    = jQuery("#num_intervalo").val(); 
+    // Recuperar os valores inseridos pelo usuário
+    var nomeCampanha = document.getElementById("nome_campanha").value;
+    var numNotificacoes = parseInt(document.getElementById("num_notificacoes").value);
+    var intervalo = parseInt(document.getElementById("num_intervalo").value) * 1000; // Convertendo para milissegundos
 
-  var tot_interacoes = 0;
+    var titulo = "Uma notificação de exemplo";
+    var mensagem = "Estamos apenas mostrando como é o app de notificação de exemplo";
 
-  var intervalo = setInterval(function(){
-    
-      notificacao("Eu sou uma mensagem de exemplo","Isso aqui é apenas um exemplo sobre como poderia ser uma notificação.");
-      
-      tot_interacoes++;
-      
-      if(tot_interacoes==num_notificacoes){
-        clearInterval(intervalo);
-      }
-
-  },num_intervalo * 1000);
-
+    for (var i = 0; i < numNotificacoes; i++) {
+        // Usando setTimeout para agendar notificações com base no intervalo fornecido
+        setTimeout(function () {
+            notificacao(titulo, mensagem);
+        }, intervalo * i);
+    }
 }
 
 // ENVIAR NOTIFICAÇÃO 

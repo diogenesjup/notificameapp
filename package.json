@@ -1,7 +1,7 @@
 {
   "name": "com.diogenesjunior.notificame",
   "version": "1.0.0",
-  "description": "A sua beleza não tem distância. Beleza e bem estar no conforto de onde você estiver",
+  "description": "Notificações Personalizadas para o que precisar",
   "main": "index.html",
   "scripts": {
     "test": "test"
