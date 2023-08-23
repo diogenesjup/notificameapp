@@ -141,14 +141,59 @@ ysyss
 
                         <div class="input-style no-borders mb-4">
                             <select class="form-control" name="app_icon" id="app_icon" style="padding-left:12px">
+                                <option value="">Nenhum</option>
                                 <option value="uber">Uber</option>
                                 <option value="hotmart">HotMart</option>
                                 <option value="nubank">NuBank</option>
-                                <option value="">Nenhum</option>
+                                <option value="whatsApp">WhatsApp</option>
+                                <option value="kiwify">Kiwify</option>
+                                <option value="eduzz">Eduzz</option>
+                                <option value="monetizze">MONETIZZE</option>
+                                <option value="braip">BRAIP</option>
+                                <option value="tiktok">Tik Tok</option>
                             </select>
-                            <label for="num_intervalo" class="color-highlight">Aplicátivo</label>
+                            <label for="num_intervalo" class="color-highlight">Aplicativo</label>
+                        </div>
+
+
+                        <div class="input-style no-borders mb-4">
+                            <select class="form-control" name="local_icone" id="local_icone" style="padding-left:12px">
+                                <option value="left">Esquerda (pequeno)</option>
+                                <option value="right">Direita (grande)</option>
+                                <option value="all">Ambos</option>
+                            </select>
+                            <label for="local_icone" class="color-highlight">Local do ícone</label>
                         </div>
                         
+
+                        <div class="list-group list-custom-small list-icon-0">
+                            <a data-bs-toggle="collapse" class="no-effect" href="#collapse-1">
+                                <span class="font-14">Editar textos das Notificações</span>
+                                <i class="fa fa-angle-down"></i>
+                            </a>        
+                        </div>
+                        <div class="collapse" id="collapse-1">
+
+                            <div id="formConteudoNotificacoes">
+                                <div class="input-style no-borders mb-4">
+                                    <input type="text" class="form-control" name="ger_titulo_notificacao[]" placeholder="Título da Notificação" style="padding-left:12px">
+                                    <label class="color-highlight">Título da Notificação</label>
+                                </div>
+                                <div class="input-style no-borders mb-4">
+                                    <input type="text" class="form-control" name="ger_texto_notificacao[]" placeholder="Texto da Notificação" style="padding-left:12px">
+                                    <label class="color-highlight">Texto da Notificação</label>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <p id="linkAddNewFields" style="text-align: right;">
+                                <a href="" style="text-decoration: underline !important;font-size:13px;color:#747474 !important;" onclick="appendNovosCampos()">
+                                    adicionar texto
+                                </a>
+                            </p>
+
+                        </div> 
+
                         
                         <button type="button" onclick="enviarCampanhaNotificacoes()"class="btn btn-full btn-l font-600 font-15 btn-default mt-4 rounded-s" style="display: block;width:100%;background:#ccc;color:#000;">Disparar</button>
                         

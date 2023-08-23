@@ -10,16 +10,27 @@ function enviarCampanhaNotificacoes() {
     var numNotificacoes = parseInt(document.getElementById("num_notificacoes").value);
     var intervalo = parseInt(document.getElementById("num_intervalo").value) * 1000; // Convertendo para milissegundos
     var appIcon = document.getElementById("app_icon").value;
+    var local_icone = document.getElementById("local_icone").value;
 
     var titulo = "Uma notificação de exemplo";
     var mensagem = "Estamos apenas mostrando como é o app de notificação de exemplo";
 
+    // Coletando os títulos e mensagens das notificações
+    // var titulos = document.querySelectorAll('input[name="ger_titulo_notificacao[]"]');
+    // var mensagens = document.querySelectorAll('input[name="ger_texto_notificacao[]"]');
+
     for (var i = 0; i < numNotificacoes; i++) {
+
+        let tituloNotificacao = (titulos[i] && titulos[i].value) ? titulos[i].value : "Nova notificação";
+        let mensagemNotificacao = (mensagens[i] && mensagens[i].value) ? mensagens[i].value : "Abra para visualizar";
+
         // Usando setTimeout para agendar notificações com base no intervalo fornecido
         setTimeout(function () {
-            notificacao(titulo, mensagem,appIcon);
+            notificacao(tituloNotificacao, mensagemNotificacao, appIcon, local_icone);
         }, intervalo * i);
     }
+
+ 
 }
 
 function generateUniqueId() {
@@ -28,7 +39,7 @@ function generateUniqueId() {
 
 
 // ENVIAR NOTIFICAÇÃO 
-function notificacao(titulo,mensagem,appIcon){
+function notificacao(titulo,mensagem,appIcon,local_icone){
 
   console.log("Sim...");
           
@@ -38,6 +49,10 @@ function notificacao(titulo,mensagem,appIcon){
       var ID_NOTIFICATION_1 = generateUniqueId();
 
       var icon = "";
+
+      if(appIcon==""){
+        icon = "https://fabricadeplugins.com.br/wp-content/uploads/2023/07/simbolo.png";
+    }
 
       if(appIcon=="uber"){
          icon = "https://cdn.icon-icons.com/icons2/2108/PNG/512/uber_icon_130805.png";
@@ -50,19 +65,67 @@ function notificacao(titulo,mensagem,appIcon){
       if(appIcon=="nubank"){
           icon = "https://logospng.org/download/nubank/logo-nubank-roxo-icon-4096.png";
       }
-
-      if(appIcon==""){
-          icon = "https://fabricadeplugins.com.br/wp-content/uploads/2023/07/simbolo.png";
+      
+      if(appIcon=="whatsApp"){
+          icon = "https://imagepng.org/wp-content/uploads/2017/08/WhatsApp-icone-3.png";
       }
 
-      cordova.plugins.notification.local.schedule({
-          id: ID_NOTIFICATION_1,
-          title: titulo,
-          text: mensagem,
-          led: "#D40F7D",
-          badge: 1,
-          icon: icon,
-      });
+      if(appIcon=="kiwify"){
+          icon = "https://cdn.umso.co/417lumhksky1/assets/1fgwx398.jpg?w=1200&h=630&fit=crop";
+      }
+
+      if(appIcon=="eduzz"){
+          icon = "https://play-lh.googleusercontent.com/K3-rcwv7mDsxb_ixD1ZGSIIbk-ZGHaQyVwC4oovULzK-gneqydUBZkrJN9IihypY3A";
+      }
+
+      if(appIcon=="monetizze"){
+          icon = "https://play-lh.googleusercontent.com/EAENxvtmp7PLLVcHS_06C5QTKF-E3hBzdIfq-gy4fTE7-8aBdBXjQFiypVIv7oeplOY";
+      }
+
+      if(appIcon=="braip"){
+          icon = "https://play-lh.googleusercontent.com/Byns97-Th6gCO279OBAiScsrr-aHLXj-QDq_qm2TkHHcgHr7x-MVZw0PguuEl7ufxr6U";
+      }
+
+      if(appIcon=="tiktok"){
+          icon = "https://cdn-icons-png.flaticon.com/512/3938/3938074.png";
+      }
+
+      
+      if(local_icone=="left"){
+          cordova.plugins.notification.local.schedule({
+            id: ID_NOTIFICATION_1,
+            title: titulo,
+            text: mensagem,
+            led: "#D40F7D",
+            badge: 1,
+            smallIcon: icon,
+        });
+      }
+
+      if(local_icone=="right"){
+          cordova.plugins.notification.local.schedule({
+            id: ID_NOTIFICATION_1,
+            title: titulo,
+            text: mensagem,
+            led: "#D40F7D",
+            badge: 1,
+            icon: icon,
+        });
+      }
+
+      if(local_icone=="all"){
+          cordova.plugins.notification.local.schedule({
+            id: ID_NOTIFICATION_1,
+            title: titulo,
+            text: mensagem,
+            led: "#D40F7D",
+            badge: 1,
+            smallIcon: icon,
+            icon: icon,
+        });
+      }
+
+      
 
   //$(document).on("click", "#showNotification1", function() {    
   //});
@@ -72,7 +135,23 @@ function notificacao(titulo,mensagem,appIcon){
 }
 
 
+function appendNovosCampos(){
 
+   jQuery("#formConteudoNotificacoes").append(`
+ 
+            <div class="input-style no-borders mb-4">
+                <input type="text" class="form-control" name="ger_titulo_notificacao[]" placeholder="Título da Notificação" style="padding-left:12px">
+                <label class="color-highlight">Título da Notificação</label>
+            </div>
+            <div class="input-style no-borders mb-4">
+                <input type="text" class="form-control" name="ger_texto_notificacao[]" placeholder="Texto da Notificação" style="padding-left:12px">
+                <label class="color-highlight">Texto da Notificação</label>
+            </div>
+            <hr>
+   
+   `);
+
+}
 
 
 
