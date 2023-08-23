@@ -12,12 +12,12 @@ function enviarCampanhaNotificacoes() {
     var appIcon = document.getElementById("app_icon").value;
     var local_icone = document.getElementById("local_icone").value;
 
-    var titulo = "Uma notificação de exemplo";
-    var mensagem = "Estamos apenas mostrando como é o app de notificação de exemplo";
+    //var titulo = "Uma notificação de exemplo";
+    //var mensagem = "Estamos apenas mostrando como é o app de notificação de exemplo";
 
     // Coletando os títulos e mensagens das notificações
-    // var titulos = document.querySelectorAll('input[name="ger_titulo_notificacao[]"]');
-    // var mensagens = document.querySelectorAll('input[name="ger_texto_notificacao[]"]');
+    var titulos = document.querySelectorAll('input[name="ger_titulo_notificacao[]"]');
+    var mensagens = document.querySelectorAll('input[name="ger_texto_notificacao[]"]');
 
     for (var i = 0; i < numNotificacoes; i++) {
 
