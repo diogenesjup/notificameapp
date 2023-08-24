@@ -51,45 +51,46 @@ function notificacao(titulo,mensagem,appIcon,local_icone){
       var icon = "";
 
       if(appIcon==""){
-        icon = "https://fabricadeplugins.com.br/wp-content/uploads/2023/07/simbolo.png";
+        icon = "simbolo.png";
     }
 
       if(appIcon=="uber"){
-         icon = "https://cdn.icon-icons.com/icons2/2108/PNG/512/uber_icon_130805.png";
+         icon = "uber_icon_130805.png";
       }
 
       if(appIcon=="hotmart"){
-          icon = "https://static.semrush.com/blog/uploads/user/c1/12/c1123fdd8714f1b5c690ed52fa8412e7.png";
+          icon = "c1123fdd8714f1b5c690ed52fa8412e7.png";
       }
 
       if(appIcon=="nubank"){
-          icon = "https://logospng.org/download/nubank/logo-nubank-roxo-icon-4096.png";
+          icon = "logo-nubank-roxo-icon-4096.png";
       }
       
       if(appIcon=="whatsApp"){
-          icon = "https://imagepng.org/wp-content/uploads/2017/08/WhatsApp-icone-3.png";
+          icon = "WhatsApp-icone-3.png";
       }
 
       if(appIcon=="kiwify"){
-          icon = "https://cdn.umso.co/417lumhksky1/assets/1fgwx398.jpg?w=1200&h=630&fit=crop";
+          icon = "1fgwx398.jpg";
       }
 
       if(appIcon=="eduzz"){
-          icon = "https://play-lh.googleusercontent.com/K3-rcwv7mDsxb_ixD1ZGSIIbk-ZGHaQyVwC4oovULzK-gneqydUBZkrJN9IihypY3A";
+          icon = "eduzz.png";
       }
 
       if(appIcon=="monetizze"){
-          icon = "https://play-lh.googleusercontent.com/EAENxvtmp7PLLVcHS_06C5QTKF-E3hBzdIfq-gy4fTE7-8aBdBXjQFiypVIv7oeplOY";
+          icon = "monetizze.png";
       }
 
       if(appIcon=="braip"){
-          icon = "https://play-lh.googleusercontent.com/Byns97-Th6gCO279OBAiScsrr-aHLXj-QDq_qm2TkHHcgHr7x-MVZw0PguuEl7ufxr6U";
+          icon = "braip.png";
       }
 
       if(appIcon=="tiktok"){
-          icon = "https://cdn-icons-png.flaticon.com/512/3938/3938074.png";
+          icon = "3938074.png";
       }
 
+      icon = "res://"+icon;
       
       if(local_icone=="left"){
           cordova.plugins.notification.local.schedule({
