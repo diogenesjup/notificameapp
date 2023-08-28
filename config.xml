@@ -98,18 +98,18 @@
         <icon src="www/assets/images/icones/960.png" density="xxxhdpi" width="960" height="960" />
         <icon src="www/assets/images/icones/1024x1024.png" density="xxxhdpi"  width="1024" height="1024" />
 
-        <resource-file src="www/res/android/1fgwx398.jpg" target="app/src/main/res/drawable/3938074.png" />
-        <resource-file src="www/res/android/3938074.png" target="app/src/main/res/drawable/3938074.png" />
-        <resource-file src="www/res/android/braip.png" target="app/src/main/res/drawable/braip.png" />
-        <resource-file src="www/res/android/c1123fdd8714f1b5c690ed52fa8412e7.png" target="app/src/main/res/drawable/c1123fdd8714f1b5c690ed52fa8412e7.png" />
-        <resource-file src="www/res/android/eduzz.png" target="app/src/main/res/drawable/eduzz.png" />
-        <resource-file src="www/res/android/logo-nubank-roxo-icon-4096.png" target="app/src/main/res/drawable/logo-nubank-roxo-icon-4096.png" />
-        <resource-file src="www/res/android/monetizze.png" target="app/src/main/res/drawable/monetizze.png" />
-        <resource-file src="www/res/android/simbolo.png" target="app/src/main/res/drawable/simbolo.png" />
-        <resource-file src="www/res/android/uber_icon_130805.png" target="app/src/main/res/drawable/uber_icon_130805.png" />
-        <resource-file src="www/res/android/unnamed (1).png" target="app/src/main/res/drawable/unnamed (1).png" />
-        <resource-file src="www/res/android/unnamed.png" target="app/src/main/res/drawable/unnamed.png" />
-        <resource-file src="www/res/android/WhatsApp-icone-3.png" target="app/src/main/res/drawable/WhatsApp-icone-3.png" />
+        <resource-file src="www/res/android/1fgwx398.jpg" target="app/src/main/res/drawable/notif-1fgwx398.jpg" />
+        <resource-file src="www/res/android/3938074.png" target="app/src/main/res/drawable/notif-3938074.png" />
+        <resource-file src="www/res/android/braip.png" target="app/src/main/res/drawable/notif-braip.png" />
+        <resource-file src="www/res/android/c1123fdd8714f1b5c690ed52fa8412e7.png" target="app/src/main/res/drawable/notif-c1123fdd8714f1b5c690ed52fa8412e7.png" />
+        <resource-file src="www/res/android/eduzz.png" target="app/src/main/res/drawable/notif-eduzz.png" />
+        <resource-file src="www/res/android/logo-nubank-roxo-icon-4096.png" target="app/src/main/res/drawable/notif-logo-nubank-roxo-icon-4096.png" />
+        <resource-file src="www/res/android/monetizze.png" target="app/src/main/res/drawable/notif-monetizze.png" />
+        <resource-file src="www/res/android/simbolo.png" target="app/src/main/res/drawable/notif-simbolo.png" />
+        <resource-file src="www/res/android/uber_icon_130805.png" target="app/src/main/res/drawable/notif-uber_icon_130805.png" />
+        <resource-file src="www/res/android/unnamed (1).png" target="app/src/main/res/drawable/notif-unnamed (1).png" />
+        <resource-file src="www/res/android/unnamed.png" target="app/src/main/res/drawable/notif-unnamed.png" />
+        <resource-file src="www/res/android/WhatsApp-icone-3.png" target="app/src/main/res/notif-drawable/notif-WhatsApp-icone-3.png" />
 
     </platform>
     
