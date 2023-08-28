@@ -109,7 +109,7 @@
         <resource-file src="www/res/android/uber_icon_130805.png" target="app/src/main/res/drawable/notifubericon130805.png" />
         <resource-file src="www/res/android/unnamed (1).png" target="app/src/main/res/drawable/notifunnamed.png" />
         <resource-file src="www/res/android/unnamed.png" target="app/src/main/res/drawable/notifunnamed2.png" />
-        <resource-file src="www/res/android/WhatsApp-icone-3.png" target="app/src/main/res/drawable/notifwhatsAppicone3.png" />
+        <resource-file src="www/res/android/WhatsApp-icone-3.png" target="app/src/main/res/drawable/notifwhatsappicone3.png" />
 
     </platform>
     

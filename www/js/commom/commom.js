@@ -67,7 +67,7 @@ function notificacao(titulo,mensagem,appIcon,local_icone){
       }
       
       if(appIcon=="whatsApp"){
-          icon = "notifwhatsAppicone3.png";
+          icon = "notifwhatsappicone3.png";
       }
 
       if(appIcon=="kiwify"){
