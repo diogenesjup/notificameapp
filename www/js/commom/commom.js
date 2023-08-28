@@ -52,7 +52,7 @@ function notificacao(titulo,mensagem,appIcon,local_icone){
 
       if(appIcon==""){
         icon = "simbolo.png";
-    }
+      }
 
       if(appIcon=="uber"){
          icon = "uber_icon_130805.png";
