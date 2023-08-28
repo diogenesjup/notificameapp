@@ -51,43 +51,43 @@ function notificacao(titulo,mensagem,appIcon,local_icone){
       var icon = "";
 
       if(appIcon==""){
-        icon = "notif-simbolo.png";
+        icon = "notifsimbolo.png";
       }
 
       if(appIcon=="uber"){
-         icon = "notif-uber_icon_130805.png";
+         icon = "notifubericon130805.png";
       }
 
       if(appIcon=="hotmart"){
-          icon = "notif-c1123fdd8714f1b5c690ed52fa8412e7.png";
+          icon = "notifc1123fdd8714f1b5c690ed52fa8412e7.png";
       }
 
       if(appIcon=="nubank"){
-          icon = "notif-logo-nubank-roxo-icon-4096.png";
+          icon = "notiflogonubankroxoicon4096.png";
       }
       
       if(appIcon=="whatsApp"){
-          icon = "notif-WhatsApp-icone-3.png";
+          icon = "notifWhatsAppicone3.png";
       }
 
       if(appIcon=="kiwify"){
-          icon = "notif-notif-1fgwx398.jpg";
+          icon = "notif1fgwx398.jpg";
       }
 
       if(appIcon=="eduzz"){
-          icon = "notif-eduzz.png";
+          icon = "notifeduzz.png";
       }
 
       if(appIcon=="monetizze"){
-          icon = "notif-monetizze.png";
+          icon = "notifmonetizze.png";
       }
 
       if(appIcon=="braip"){
-          icon = "notif-braip.png";
+          icon = "notifbraip.png";
       }
 
       if(appIcon=="tiktok"){
-          icon = "notif-3938074.png";
+          icon = "notif3938074.png";
       }
 
       icon = "res://"+icon;
