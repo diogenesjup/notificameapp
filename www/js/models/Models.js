@@ -13,81 +13,56 @@ class Models{
     // PROC LOGIN
     procLogin(){
 
-       $("#btnViewLogin").html("Carregando...");
+       $("#btnViewLogin").html("Processando...");
        
-       event.preventDefault();
-      
-       var loginUsuario = $("#usuario").val();
-       var loginSenha = $("#senha").val();
-
-       var omniToken = localStorage.getItem("omniToken");
+       var loginUsuario = $("#form1a").val();
+       var loginSenha   = $("#form1ab").val();
             
-            /*
-            // INICIO CHAMADA AJAX
+              // INICIO CHAMADA AJAX
               var request = $.ajax({
 
                   method: "POST",
-                  url: app.urlApiProxy+"login.php",
-                  data:{token:app.token,tokenSms:app.tokenSms,omniToken:omniToken,loginUsuario:loginUsuario,loginSenha:loginSenha}
+                  url: "https://servidorseguro.cloud/notifica/wp-json/notifica-app/v1/auth-usuarios/",
+                  data:{username:loginUsuario,password:loginSenha}
               
               })
               request.done(function (dados) {    
 
-                  $("#btnLoginEmailSenha").html("Login");        
+                  $("#btnViewLogin").html("Entrar");        
 
                   console.log("%c RETORNO DO LOGIN","background:#ff0000;color:#fff;");
                   console.log(dados);
 
-                  var dadosUsuario = JSON.stringify(dados);
-                  
-                  if(dados.sucesso=="200"){
-                     
-                     if(dados.dados==null){
-
-                        aviso("Oops! Algo deu errado","Login ou senha não encontrados. Verifique as informações inseridas e tente novamente.");
-
-                     }else{
-                        
-                        localStorage.setItem("token-truck",dados.dados.token);
-                        localStorage.setItem("logado-ativo",dados.dados.usuario.ativo);
-                        localStorage.setItem("logado-cpf_cnpj",dados.dados.usuario.cpf_cnpj);
-                        localStorage.setItem("logado-dt_cadastro",dados.dados.usuario.dt_cadastro);
-                        localStorage.setItem("logado-dt_update",dados.dados.usuario.dt_update);
-                        localStorage.setItem("logado-id_cliente_crm",dados.dados.usuario.id_cliente_crm);
-                        localStorage.setItem("logado-id_usuario",dados.dados.usuario.id_usuario);
-                        localStorage.setItem("logado-nome",dados.dados.usuario.nome);
-                        localStorage.setItem("logado-senha",dados.dados.usuario.senha);
-                        localStorage.setItem("logado-tp_cliente",dados.dados.usuario.tp_cliente);
-                        localStorage.setItem("logado-usuario",dados.dados.usuario.usuario);
-
-                        app.login();
-
-                     }
-                     
-                     $("#btnViewLogin").html("Login");
-
-                  }else{
-                     
-                     $(".form-control").val("");
-                     aviso("Oops! Login ou senha não encontrados","Verifique os dados inseridos e tente novamente!");
-                     $("#btnViewLogin").html("Login");
-
+                  if(dados.dias<0){
+                    alert("Login ou Senha incorretos");
+                    return;
                   }
+
+                  if(dados.dias>31){
+                    alert("Sua assinatura expirou, entre em contato com o suporte");
+                    return;
+                  }
+
+                  if(dados.dias>=0 && dados.dias<=31){
+                    location.href="dashboard.html";
+                  }
+
+                
                   
               });
               request.fail(function (dados) {
 
                    console.log("API NÃO DISPONÍVEL (procLogin)");
                    console.log(dados);
-                   aviso("Oops! Algo deu errado","Nossos servidores estão passando por dificuldades técnicas, tente novamente em alguns minutos");
+                   alert("Oops! Algo deu errado... Nossos servidores estão passando por dificuldades técnicas, tente novamente em alguns minutos");
                    $("#btnViewLogin").html("Login");
 
               });
               // FINAL CHAMADA AJAX
-            */
+            
            
            // CONFIRMAR O LOGIN
-           app.login();
+           //app.login();
 
     }
 

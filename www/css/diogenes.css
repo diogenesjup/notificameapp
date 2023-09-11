@@ -82,3 +82,12 @@ body.auth{
       color: #000;
       font-size: 12px;
   }
+
+
+  .header img {
+    max-width: 70px !important;
+}
+
+.page-title {
+    margin-top: 35px !important;
+}
