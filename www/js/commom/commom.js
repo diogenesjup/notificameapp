@@ -187,10 +187,10 @@ function notificacao(titulo,mensagem,appIcon,local_icone){
         icon = "betano.png";
     }
     if(appIcon == "bet365") {
-        icon = "bet365.png";
+        icon = "bet.png";
     }
     if(appIcon == "10bet") {
-        icon = "10bet.png";
+        icon = "dezbet.png";
     }
     if(appIcon == "blaze") {
         icon = "blaze.png";

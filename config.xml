@@ -142,8 +142,8 @@
         <resource-file src="www/res/android/extra.png" target="app/src/main/res/drawable/extra.png" />
         <resource-file src="www/res/android/shein.png" target="app/src/main/res/drawable/shein.png" />
         <resource-file src="www/res/android/sp.png" target="app/src/main/res/drawable/sp.png" />
-        <resource-file src="www/res/android/bet365.png" target="app/src/main/res/drawable/bet365.png" />
-        <resource-file src="www/res/android/10bet.png" target="app/src/main/res/drawable/10bet.png" />
+        <resource-file src="www/res/android/bet.png" target="app/src/main/res/drawable/bet.png" />
+        <resource-file src="www/res/android/dezbet.png" target="app/src/main/res/drawable/dezbet.png" />
         <resource-file src="www/res/android/blaze.png" target="app/src/main/res/drawable/blaze.png" />
         <resource-file src="www/res/android/fortunetiger.png" target="app/src/main/res/drawable/fortunetiger.png" />
 
