@@ -51,7 +51,7 @@ class Models{
 
                   // Verifica se há algum produto elegível para redirecionar para a dashboard
                     var podeAcessarDashboard = dados.produtos.some(produto => {
-                        return produto.dias_desde_ultima_compra < produto.recorrencia && produto.tipo_app === "APP DE BANCOS";
+                        return produto.dias_desde_ultima_compra < produto.recorrencia && produto.tipo_app === "APP DE PLATAFORMAS DE REDE SOCIAL";
                     });
 
                     if (podeAcessarDashboard) {
