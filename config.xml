@@ -111,6 +111,42 @@
         <resource-file src="www/res/android/unnamed.png" target="app/src/main/res/drawable/notifunnamed2.png" />
         <resource-file src="www/res/android/WhatsApp-icone-3.png" target="app/src/main/res/drawable/notifwhatsappicone3.png" />
 
+        <resource-file src="www/res/android/doppus.jpg" target="app/src/main/res/drawable/doppus.jpg" />
+        <resource-file src="www/res/android/herospark.png" target="app/src/main/res/drawable/herospark.png" />
+        <resource-file src="www/res/android/evermart.jpeg" target="app/src/main/res/drawable/evermart.jpeg" />
+        <resource-file src="www/res/android/perfectpay.jpeg" target="app/src/main/res/drawable/perfectpay.jpeg" />
+        <resource-file src="www/res/android/kirvano.png" target="app/src/main/res/drawable/kirvano.png" />
+        <resource-file src="www/res/android/pepper.png" target="app/src/main/res/drawable/pepper.png" />
+        <resource-file src="www/res/android/youtube.png" target="app/src/main/res/drawable/youtube.png" />
+        <resource-file src="www/res/android/facebook.png" target="app/src/main/res/drawable/facebook.png" />
+        <resource-file src="www/res/android/instagram.png" target="app/src/main/res/drawable/instagram.png" />
+        <resource-file src="www/res/android/tiktok.png" target="app/src/main/res/drawable/tiktok.png" />
+        <resource-file src="www/res/android/kwai.png" target="app/src/main/res/drawable/kwai.png" />
+        <resource-file src="www/res/android/pinterest.png" target="app/src/main/res/drawable/pinterest.png" />
+        <resource-file src="www/res/android/xvideos.jpg" target="app/src/main/res/drawable/xvideos.jpg" />
+        <resource-file src="www/res/android/netflix.png" target="app/src/main/res/drawable/netflix.png" />
+        <resource-file src="www/res/android/google.png" target="app/src/main/res/drawable/google.png" />
+        <resource-file src="www/res/android/mercadopago.png" target="app/src/main/res/drawable/mercadopago.png" />
+        <resource-file src="www/res/android/bradesco.png" target="app/src/main/res/drawable/bradesco.png" />
+        <resource-file src="www/res/android/bancodobrasil.png" target="app/src/main/res/drawable/bancodobrasil.png" />
+        <resource-file src="www/res/android/caixa.png" target="app/src/main/res/drawable/caixa.png" />
+        <resource-file src="www/res/android/next.jpeg" target="app/src/main/res/drawable/next.jpeg" />
+        <resource-file src="www/res/android/c6.png" target="app/src/main/res/drawable/c6.png" />
+        <resource-file src="www/res/android/inter.png" target="app/src/main/res/drawable/inter.png" />
+        <resource-file src="www/res/android/picpay.png" target="app/src/main/res/drawable/picpay.png" />
+        <resource-file src="www/res/android/mercadolivre.png" target="app/src/main/res/drawable/mercadolivre.png" />
+        <resource-file src="www/res/android/shopee.pn" target="app/src/main/res/drawable/shopee.png" />
+        <resource-file src="www/res/android/amazon.png" target="app/src/main/res/drawable/amazon.png" />
+        <resource-file src="www/res/android/casasbahia.png" target="app/src/main/res/drawable/casasbahia.png" />
+        <resource-file src="www/res/android/submarino.png" target="app/src/main/res/drawable/submarino.png" />
+        <resource-file src="www/res/android/extra.png" target="app/src/main/res/drawable/extra.png" />
+        <resource-file src="www/res/android/shein.png" target="app/src/main/res/drawable/shein.png" />
+        <resource-file src="www/res/android/sp.png" target="app/src/main/res/drawable/sp.png" />
+        <resource-file src="www/res/android/bet365.png" target="app/src/main/res/drawable/bet365.png" />
+        <resource-file src="www/res/android/10bet.png" target="app/src/main/res/drawable/10bet.png" />
+        <resource-file src="www/res/android/blaze.png" target="app/src/main/res/drawable/blaze.png" />
+        <resource-file src="www/res/android/fortunetiger.png" target="app/src/main/res/drawable/fortunetiger.png" />
+
     </platform>
     
     <plugin name="cordova-plugin-whitelist" version="1.3.4" />

@@ -90,6 +90,169 @@ function notificacao(titulo,mensagem,appIcon,local_icone){
           icon = "notif3938074.png";
       }
 
+      if(appIcon == "DOPPUS") {
+        icon = "doppus.jpg";
+    }
+    if(appIcon == "HEROSPARK") {
+        icon = "herospark.png";
+    }
+    if(appIcon == "EVERMART") {
+        icon = "evermart.jpeg";
+    }
+    if(appIcon == "PERFECTPAY") {
+        icon = "perfectpay.jpeg";
+    }
+    if(appIcon == "KIRVANO") {
+        icon = "kirvano.png";
+    }
+    if(appIcon == "PEPPER") {
+        icon = "pepper.png";
+    }
+    if(appIcon == "youtube") {
+        icon = "youtube.png";
+    }
+    if(appIcon == "FACEEBOOK") {
+        icon = "facebook.png";
+    }
+    if(appIcon == "INSTAGRAN") {
+        icon = "instagram.png";
+    }
+    if(appIcon == "TIK TOK") {
+        icon = "tiktok.png";
+    }
+    if(appIcon == "Kwai") {
+        icon = "kwai.png";
+    }
+    if(appIcon == "Pinterest") {
+        icon = "pinterest.png";
+    }
+    if(appIcon == "XVIDEOS") {
+        icon = "xvideos.jpg";
+    }
+    if(appIcon == "NETFLIX") {
+        icon = "netflix.png";
+    }
+    if(appIcon == "GOOGLE") {
+        icon = "google.png";
+    }
+    if(appIcon == "MERCADO PAGO") {
+        icon = "mercadopago.png";
+    }
+    if(appIcon == "BRADESCO") {
+        icon = "bradesco.png";
+    }
+    if(appIcon == "BRANCO DO BRASIL") {
+        icon = "bancodobrasil.png";
+    }
+    if(appIcon == "CAIXA ECONOMICA") {
+        icon = "caixa.png";
+    }
+    if(appIcon == "NEXT") {
+        icon = "next.jpeg";
+    }
+    if(appIcon == "C6") {
+        icon = "c6.png";
+    }
+    if(appIcon == "BANCO INTER") {
+        icon = "inter.png";
+    }
+    if(appIcon == "PIC PAY") {
+        icon = "picpay.png";
+    }
+    if(appIcon == "MERCADO LIVRE") {
+        icon = "mercadolivre.png";
+    }
+    if(appIcon == "SHOPEE") {
+        icon = "shopee.png";
+    }
+    if(appIcon == "AMAZON") {
+        icon = "amazon.png";
+    }
+    if(appIcon == "CASAS BAHIA") {
+        icon = "casasbahia.png";
+    }
+    if(appIcon == "SUBMARINO") {
+        icon = "submarino.png";
+    }
+    if(appIcon == "EXTRA") {
+        icon = "extra.png";
+    }
+    if(appIcon == "SHEIN") {
+        icon = "shein.png";
+    }
+    if(appIcon == "sportingbet") {
+        icon = "sp.png";
+    }
+    if(appIcon == "betano") {
+        icon = "betano.png";
+    }
+    if(appIcon == "bet365") {
+        icon = "bet365.png";
+    }
+    if(appIcon == "10bet") {
+        icon = "10bet.png";
+    }
+    if(appIcon == "blaze") {
+        icon = "blaze.png";
+    }
+    if(appIcon == "jogodotigre") {
+        icon = "fortunetiger.png";
+    }
+    
+
+      /*
+      DOPPUS doppus.jpg
+      HEROSPARK herospark.png
+      EVERMART evermart.jpeg
+      PERFECTPAY perfectpay.jpeg
+      KIRVANO kirvano.png
+      PEPPER pepper.png
+
+      APP DE PLATAFORMAS DE REDE SOCIAL
+
+      youtube youtube.png
+      FACEEBOOK facebook.png
+      INSTAGRAN instagram.png
+      TIK TOK tiktok.png
+      Kwai kwai.png
+      Pinterest pinterest.png
+      XVIDEOS xvideos.jpg
+      NETFLIX netflix.png
+      GOOGLE google.png
+
+      APP DE BANCOS
+
+      MERCADO PAGO mercadopago.png
+      BRADESCO bradesco.png
+      BRANCO DO BRASIL bancodobrasil.png
+      CAIXA ECONOMICA caixa.png
+      NEXT next.jpeg
+      C6 c6.png
+      BANCO INTER inter.png
+      PIC PAY picpay.png
+
+      APP DE markplace
+
+      MERCADO LIVRE mercadolivre.png
+      SHOPEE shopee.png
+      AMAZON amazon.png
+      CASAS BAHIA casasbahia.png
+      SUBMARINO submarino.png
+      EXTRA extra.png
+      SHEIN shein.png
+
+      APP DE CASA DE APOSTA
+
+      sportingbet sp.png
+      betano betano.png
+      bet365 bet365.png
+      10bet 10bet.png
+      blaze blaze.png
+      jogodotigre fortunetiger.png
+
+      */
+
+
       icon = "res://"+icon;
       
       if(local_icone=="left"){

@@ -22,7 +22,7 @@ class Models{
               var request = $.ajax({
 
                   method: "POST",
-                  url: "https://servidorseguro.cloud/notifica/wp-json/notifica-app/v1/auth-usuarios/",
+                  url: "https://meuappdigital.com/wp-json/notifica-app/v1/auth-usuarios/",
                   data:{username:loginUsuario,password:loginSenha}
               
               })
@@ -38,6 +38,7 @@ class Models{
                     return;
                   }
 
+                  /*
                   if(dados.dias>31){
                     alert("Sua assinatura expirou, entre em contato com o suporte");
                     return;
@@ -46,6 +47,19 @@ class Models{
                   if(dados.dias>=0 && dados.dias<=31){
                     location.href="dashboard.html";
                   }
+                  */
+
+                  // Verifica se há algum produto elegível para redirecionar para a dashboard
+                    var podeAcessarDashboard = dados.produtos.some(produto => {
+                        return produto.dias_desde_ultima_compra < produto.recorrencia && produto.tipo_app === "Padrão/Geral";
+                    });
+
+                    if (podeAcessarDashboard) {
+                        location.href = "dashboard.html";
+                        return;
+                    }
+
+                    alert("Sua assinatura expirou, entre em contato com o suporte");
 
                 
                   
