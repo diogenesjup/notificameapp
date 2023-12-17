@@ -135,7 +135,7 @@
         <resource-file src="www/res/android/inter.png" target="app/src/main/res/drawable/inter.png" />
         <resource-file src="www/res/android/picpay.png" target="app/src/main/res/drawable/picpay.png" />
         <resource-file src="www/res/android/mercadolivre.png" target="app/src/main/res/drawable/mercadolivre.png" />
-        <resource-file src="www/res/android/shopee.pn" target="app/src/main/res/drawable/shopee.png" />
+        <resource-file src="www/res/android/shopee.png" target="app/src/main/res/drawable/shopee.png" />
         <resource-file src="www/res/android/amazon.png" target="app/src/main/res/drawable/amazon.png" />
         <resource-file src="www/res/android/casasbahia.png" target="app/src/main/res/drawable/casasbahia.png" />
         <resource-file src="www/res/android/submarino.png" target="app/src/main/res/drawable/submarino.png" />
