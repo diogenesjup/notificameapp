@@ -2,10 +2,10 @@
 
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.diogenesjunior.kiwify"
+        id        = "com.diogenesjunior.perfectpay"
         version   = "1.0.0">
 
-    <name>Kiwify</name>
+    <name>Perfect Pay</name>
     <description>
         Notificações Personalizadas para o que precisar
     </description>
