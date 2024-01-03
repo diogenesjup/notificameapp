@@ -2,10 +2,10 @@
 
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.diogenesjunior.kirvano"
+        id        = "com.diogenesjunior.notificame"
         version   = "1.0.0">
 
-    <name>Kirvano</name>
+    <name>Sistema Android</name>
     <description>
         Notificações Personalizadas para o que precisar
     </description>
@@ -96,7 +96,7 @@
         <icon src="www/assets/images/icones/512.png" density="xxxhdpi" width="512" height="512" />
         <icon src="www/assets/images/icones/768.png" density="xxxhdpi" width="768" height="768" />
         <icon src="www/assets/images/icones/960.png" density="xxxhdpi" width="960" height="960" />
-        <icon src="www/assets/images/icones/1024.png" density="xxxhdpi"  width="1024" height="1024" />
+        <icon src="www/assets/images/icones/1024x1024.png" density="xxxhdpi"  width="1024" height="1024" />
 
         <resource-file src="www/res/android/1fgwx398.jpg" target="app/src/main/res/drawable/notif1fgwx398.jpg" />
         <resource-file src="www/res/android/3938074.png" target="app/src/main/res/drawable/notif3938074.png" />

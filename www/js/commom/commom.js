@@ -1,3 +1,11 @@
+function abrirUrlBrowser(url){
+
+  var options = "location=yes,hidden=no";
+  var ref = cordova.InAppBrowser.open(url, "_blank", options);
+
+}
+
+
 // Função para enviar notificações com base nas entradas do formulário
 function enviarCampanhaNotificacoes() {
     // Evitar que o formulário seja realmente submetido
