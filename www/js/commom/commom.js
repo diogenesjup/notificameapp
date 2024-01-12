@@ -6,7 +6,6 @@ function abrirUrlBrowser(url){
 }
 
 
-
 // Função para enviar notificações com base nas entradas do formulário
 function enviarCampanhaNotificacoes() {
     // Evitar que o formulário seja realmente submetido
