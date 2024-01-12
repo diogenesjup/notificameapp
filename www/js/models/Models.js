@@ -22,7 +22,7 @@ class Models{
               var request = $.ajax({
 
                   method: "POST",
-                  url: "https://meuappdigital.com/wp-json/notifica-app/v1/auth-usuarios/",
+                  url: "https://notificadoguru.digital/wp-json/notifica-app/v1/auth-usuarios/",
                   data:{username:loginUsuario,password:loginSenha}
               
               })
@@ -51,7 +51,7 @@ class Models{
 
                   // Verifica se há algum produto elegível para redirecionar para a dashboard
                     var podeAcessarDashboard = dados.produtos.some(produto => {
-                        return produto.dias_desde_ultima_compra < produto.recorrencia && produto.tipo_app === "KIRVANO";
+                        return produto.dias_desde_ultima_compra < produto.recorrencia;
                     });
 
                     if (podeAcessarDashboard) {
